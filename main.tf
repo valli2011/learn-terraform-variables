@@ -128,9 +128,10 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
 module "s3-bucket-vs" {
   source  = "app.terraform.io/policy-as-code-training/s3-bucket-vs/aws"
   version = "1.0.0"
-  bucket = "vsbucket202517"
+  bucket_name = "vsbucket202517"
 }
 
